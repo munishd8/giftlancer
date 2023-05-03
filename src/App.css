@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -35,4 +36,284 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Header CSS */
+.header-wapper {
+  display: inline-block;
+  width: 100%;
+}
+.header-wapper .navbar {
+  background-color: #171A23 !important;
+  height: 70px;
+}
+.header-wapper .navbar .main-logo {
+  width: 135px;
+}
+.header-wapper .navbar .navbar-nav .avtar-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.header-wapper .navbar .navbar-nav .nav-link {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  opacity: 0.95;
+  margin-right: 15px;
+}
+
+
+/* Footer CSS */
+.footer-wapper {
+  display: inline-block;
+  width: 100%;
+  padding: 30px 0px;
+}
+.footer-wapper .footer-title h2{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 18px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+.footer-wapper .footer-menu .nav .nav-link{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  text-decoration-line: underline;
+  color: #000000;
+  padding: 5px 0px;
+}
+.footer-wapper .footer-subcribe-wapper .subscribe-form {
+  position: relative;
+}
+.footer-wapper .footer-subcribe-wapper #formBasicEmail:focus {
+  box-shadow: none;
+}
+.footer-wapper .footer-subcribe-wapper #formBasicEmail {
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  width: 220px;
+  height: 30px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.footer-wapper .footer-subcribe-wapper .btn.btn-primary {
+  background: #FBA93C;
+  border-radius: 8px;
+  padding: 6px 8px;
+  width: 77px;
+  height: 30px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  border: none;
+  right: 30px;
+  top: 0;
+  position: absolute;
+}
+.footer-wapper .social-icon-wapper ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-wapper .social-icon-wapper ul li{
+  display: inline;
+  margin-right: 20px;
+}
+.footer-wapper .footerinnet-bottom{
+  margin-top: 30px;
+}
+.footer-wapper .footerinnet-bottom .copywrite {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+
+
+/* Product CSS */
+.product-page-wapper {
+  display: inline-block;
+  width: 100%;
+  background-color: #F6FAFD;
+  padding: 15px 0px;
+}
+.product-page-wapper .product-page-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+.product-page-wapper .product-page-top .product-top-left a{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.03em;
+  color: #000000;
+  opacity: 0.5;
+  text-decoration: none;
+}
+.product-page-wapper .product-page-top .product-top-left span{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.03em;
+  color: #000000;
+  opacity: 0.5;
+  margin-right: 10px;
+}
+.product-page-wapper .product-page-top .product-top-left strong{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.03em;
+  color: #FBA93C;
+  margin-right: 10px;
+}
+
+
+/* .product-main-wapper{
+} */
+.product-main-wapper .product-page-main-inner .sidebar-wapper{
+  background-color: #ECF3F8;
+  padding: 12px;
+}
+.product-main-wapper .product-page-main-inner .sidebar-wapper .aside-heading{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.03em;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 18px;
+  margin-top: 10px;
+}
+.product-main-wapper .product-page-main-inner .sidebar-wapper .nav .nav-link{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  color: #000000;
+  opacity: 0.95;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.product-main-wapper .product-page-main-inner .sidebar-wapper .nav .nav-link img {
+  height: 20px;
+  margin-right: 30px;
+}
+.product-main-wapper .product-page-main-inner .sidebar-wapper .nav .nav-link:hover{
+  background-color: #BDC9D1;
+  border-radius: 8px;
+}
+.product-main-wapper .product-page-main-inner .sidebar-wapper .nav .active {
+  background: #000000;
+  border-radius: 8px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  opacity: 0.95;
+}
+
+.product-main-wapper .product-page-main-inner .search-form-wapper .subscribe-form {
+  position: relative;
+}
+.product-main-wapper .product-page-main-inner .search-form-wapper #formBasicEmail:focus {
+  box-shadow: none;
+}
+.product-main-wapper .product-page-main-inner .search-form-wapper #formBasicEmail {
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  width: 278px;
+  height: 42px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.product-main-wapper .product-page-main-inner .search-form-wapper .btn.btn-primary {
+  background: #FBA93C;
+  border-radius: 8px;
+  padding: 6px 8px;
+  width: 42px;
+  height: 42px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  border: none;
+  right: 0;
+  top: 0;
+  position: absolute;
+}
+.product-main-wapper .page-heading-wapper h1{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.03em;
+  color: rgba(0, 0, 0, 0.8);
+}
+.page-filter-wapper .filter-nav-pills .nav-item a{
+  min-width: 77px;
+  height: 42px;
+  margin-right: 30px;
+  border-radius: 8px;
+  color:  #A9A9A9;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+}
+.page-filter-wapper .filter-nav-pills .nav-item a:hover{
+  background-color: #BDC9D1;
+  color:  #A9A9A9;
+}
+.page-filter-wapper .filter-nav-pills .nav-item a.active{
+  background-color: #000000;
+  color:  #FFF;
 }
