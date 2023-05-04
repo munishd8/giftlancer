@@ -1,6 +1,11 @@
-import React from 'react'
-import { Col, Container, Nav, Row,Form,Button, Image } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Col, Container, Nav, Row,Form,Button, Image, Modal } from 'react-bootstrap';
 const ProductPage = () => {
+
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     return (
         <>
         <div className='product-page-wapper'>
@@ -182,7 +187,7 @@ const ProductPage = () => {
                                                 <Col xs={12} md={4}>
                                                     <div className='products-item'>
                                                         <div className='products-image'>
-                                                            <Image src={process.env.PUBLIC_URL + '/images/product-item.png'} alt="Men Fashion" />
+                                                            <Image onClick={handleShow} src={process.env.PUBLIC_URL + '/images/product-item.png'} alt="Men Fashion" />
                                                         </div>
                                                         <div className='like-fav-wapper'>
                                                             <div className='like-wapper'>
@@ -200,10 +205,10 @@ const ProductPage = () => {
                                                         </div>
                                                         <div className='title-info-wapper'>
                                                             <div className='category'>
-                                                                <span>Tee Ball Coach</span>
+                                                                <span onClick={handleShow} >Tee Ball Coach</span>
                                                             </div>
                                                             <div className='title'>
-                                                                <span>The ultimate guide to teaching young player ...</span>
+                                                                <span onClick={handleShow}>The ultimate guide to teaching young player ...</span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -211,7 +216,7 @@ const ProductPage = () => {
                                                 <Col xs={12} md={4}>
                                                     <div className='products-item'>
                                                         <div className='products-image'>
-                                                            <Image src={process.env.PUBLIC_URL + '/images/product-item6.png'} alt="Men Fashion" />
+                                                            <Image onClick={handleShow} src={process.env.PUBLIC_URL + '/images/product-item6.png'} alt="Men Fashion" />
                                                         </div>
                                                         <div className='like-fav-wapper'>
                                                             <div className='like-wapper'>
@@ -229,7 +234,7 @@ const ProductPage = () => {
                                                         </div>
                                                         <div className='title-info-wapper'>
                                                             <div className='category'>
-                                                                <span>Tee Ball Coach</span>
+                                                                <span onClick={handleShow} >Tee Ball Coach</span>
                                                             </div>
                                                             <div className='title'>
                                                                 <span>The ultimate guide to teaching young player ...</span>
@@ -240,7 +245,7 @@ const ProductPage = () => {
                                                 <Col xs={12} md={4}>
                                                     <div className='products-item'>
                                                         <div className='products-image'>
-                                                            <Image src={process.env.PUBLIC_URL + '/images/product-item3.png'} alt="Men Fashion" />
+                                                            <Image onClick={handleShow} src={process.env.PUBLIC_URL + '/images/product-item3.png'} alt="Men Fashion" />
                                                         </div>
                                                         <div className='like-fav-wapper'>
                                                             <div className='like-wapper'>
@@ -258,7 +263,7 @@ const ProductPage = () => {
                                                         </div>
                                                         <div className='title-info-wapper'>
                                                             <div className='category'>
-                                                                <span>Tee Ball Coach</span>
+                                                                <span onClick={handleShow} >Tee Ball Coach</span>
                                                             </div>
                                                             <div className='title'>
                                                                 <span>The ultimate guide to teaching young player ...</span>
@@ -269,7 +274,7 @@ const ProductPage = () => {
                                                 <Col xs={12} md={4}>
                                                     <div className='products-item'>
                                                         <div className='products-image'>
-                                                            <Image src={process.env.PUBLIC_URL + '/images/product-item4.png'} alt="Men Fashion" />
+                                                            <Image onClick={handleShow} src={process.env.PUBLIC_URL + '/images/product-item4.png'} alt="Men Fashion" />
                                                         </div>
                                                         <div className='like-fav-wapper'>
                                                             <div className='like-wapper'>
@@ -287,7 +292,7 @@ const ProductPage = () => {
                                                         </div>
                                                         <div className='title-info-wapper'>
                                                             <div className='category'>
-                                                                <span>Tee Ball Coach</span>
+                                                                <span onClick={handleShow} >Tee Ball Coach</span>
                                                             </div>
                                                             <div className='title'>
                                                                 <span>The ultimate guide to teaching young player ...</span>
@@ -298,7 +303,7 @@ const ProductPage = () => {
                                                 <Col xs={12} md={4}>
                                                     <div className='products-item'>
                                                         <div className='products-image'>
-                                                            <Image src={process.env.PUBLIC_URL + '/images/product-item5.png'} alt="Men Fashion" />
+                                                            <Image onClick={handleShow} src={process.env.PUBLIC_URL + '/images/product-item5.png'} alt="Men Fashion" />
                                                         </div>
                                                         <div className='like-fav-wapper'>
                                                             <div className='like-wapper'>
@@ -316,7 +321,7 @@ const ProductPage = () => {
                                                         </div>
                                                         <div className='title-info-wapper'>
                                                             <div className='category'>
-                                                                <span>Tee Ball Coach</span>
+                                                                <span onClick={handleShow} >Tee Ball Coach</span>
                                                             </div>
                                                             <div className='title'>
                                                                 <span>The ultimate guide to teaching young player ...</span>
@@ -327,7 +332,7 @@ const ProductPage = () => {
                                                 <Col xs={12} md={4}>
                                                     <div className='products-item'>
                                                         <div className='products-image'>
-                                                            <Image src={process.env.PUBLIC_URL + '/images/product-item2.png'} alt="Men Fashion" />
+                                                            <Image onClick={handleShow} src={process.env.PUBLIC_URL + '/images/product-item2.png'} alt="Men Fashion" />
                                                         </div>
                                                         <div className='like-fav-wapper'>
                                                             <div className='like-wapper'>
@@ -345,7 +350,7 @@ const ProductPage = () => {
                                                         </div>
                                                         <div className='title-info-wapper'>
                                                             <div className='category'>
-                                                                <span>Tee Ball Coach</span>
+                                                                <span onClick={handleShow} >Tee Ball Coach</span>
                                                             </div>
                                                             <div className='title'>
                                                                 <span>The ultimate guide to teaching young player ...</span>
@@ -356,7 +361,7 @@ const ProductPage = () => {
                                                 <Col xs={12} md={4}>
                                                     <div className='products-item'>
                                                         <div className='products-image'>
-                                                            <Image src={process.env.PUBLIC_URL + '/images/product-item6.png'} alt="Men Fashion" />
+                                                            <Image onClick={handleShow} src={process.env.PUBLIC_URL + '/images/product-item6.png'} alt="Men Fashion" />
                                                         </div>
                                                         <div className='like-fav-wapper'>
                                                             <div className='like-wapper'>
@@ -374,7 +379,7 @@ const ProductPage = () => {
                                                         </div>
                                                         <div className='title-info-wapper'>
                                                             <div className='category'>
-                                                                <span>Tee Ball Coach</span>
+                                                                <span onClick={handleShow} >Tee Ball Coach</span>
                                                             </div>
                                                             <div className='title'>
                                                                 <span>The ultimate guide to teaching young player ...</span>
@@ -385,7 +390,7 @@ const ProductPage = () => {
                                                 <Col xs={12} md={4}>
                                                     <div className='products-item'>
                                                         <div className='products-image'>
-                                                            <Image src={process.env.PUBLIC_URL + '/images/product-item3.png'} alt="Men Fashion" />
+                                                            <Image onClick={handleShow} src={process.env.PUBLIC_URL + '/images/product-item3.png'} alt="Men Fashion" />
                                                         </div>
                                                         <div className='like-fav-wapper'>
                                                             <div className='like-wapper'>
@@ -403,7 +408,7 @@ const ProductPage = () => {
                                                         </div>
                                                         <div className='title-info-wapper'>
                                                             <div className='category'>
-                                                                <span>Tee Ball Coach</span>
+                                                                <span onClick={handleShow} >Tee Ball Coach</span>
                                                             </div>
                                                             <div className='title'>
                                                                 <span>The ultimate guide to teaching young player ...</span>
@@ -414,7 +419,7 @@ const ProductPage = () => {
                                                 <Col xs={12} md={4}>
                                                     <div className='products-item'>
                                                         <div className='products-image'>
-                                                            <Image src={process.env.PUBLIC_URL + '/images/product-item.png'} alt="Men Fashion" />
+                                                            <Image onClick={handleShow} src={process.env.PUBLIC_URL + '/images/product-item.png'} alt="Men Fashion" />
                                                         </div>
                                                         <div className='like-fav-wapper'>
                                                             <div className='like-wapper'>
@@ -432,7 +437,7 @@ const ProductPage = () => {
                                                         </div>
                                                         <div className='title-info-wapper'>
                                                             <div className='category'>
-                                                                <span>Tee Ball Coach</span>
+                                                                <span onClick={handleShow} >Tee Ball Coach</span>
                                                             </div>
                                                             <div className='title'>
                                                                 <span>The ultimate guide to teaching young player ...</span>
@@ -443,7 +448,7 @@ const ProductPage = () => {
                                                 <Col xs={12} md={4}>
                                                     <div className='products-item'>
                                                         <div className='products-image'>
-                                                            <Image src={process.env.PUBLIC_URL + '/images/product-item4.png'} alt="Men Fashion" />
+                                                            <Image onClick={handleShow} src={process.env.PUBLIC_URL + '/images/product-item4.png'} alt="Men Fashion" />
                                                         </div>
                                                         <div className='like-fav-wapper'>
                                                             <div className='like-wapper'>
@@ -461,7 +466,7 @@ const ProductPage = () => {
                                                         </div>
                                                         <div className='title-info-wapper'>
                                                             <div className='category'>
-                                                                <span>Tee Ball Coach</span>
+                                                                <span onClick={handleShow} >Tee Ball Coach</span>
                                                             </div>
                                                             <div className='title'>
                                                                 <span>The ultimate guide to teaching young player ...</span>
@@ -472,7 +477,7 @@ const ProductPage = () => {
                                                 <Col xs={12} md={4}>
                                                     <div className='products-item'>
                                                         <div className='products-image'>
-                                                            <Image src={process.env.PUBLIC_URL + '/images/product-item5.png'} alt="Men Fashion" />
+                                                            <Image onClick={handleShow} src={process.env.PUBLIC_URL + '/images/product-item5.png'} alt="Men Fashion" />
                                                         </div>
                                                         <div className='like-fav-wapper'>
                                                             <div className='like-wapper'>
@@ -490,7 +495,7 @@ const ProductPage = () => {
                                                         </div>
                                                         <div className='title-info-wapper'>
                                                             <div className='category'>
-                                                                <span>Tee Ball Coach</span>
+                                                                <span onClick={handleShow} >Tee Ball Coach</span>
                                                             </div>
                                                             <div className='title'>
                                                                 <span>The ultimate guide to teaching young player ...</span>
@@ -501,7 +506,7 @@ const ProductPage = () => {
                                                 <Col xs={12} md={4}>
                                                     <div className='products-item'>
                                                         <div className='products-image'>
-                                                            <Image src={process.env.PUBLIC_URL + '/images/product-item2.png'} alt="Men Fashion" />
+                                                            <Image onClick={handleShow} src={process.env.PUBLIC_URL + '/images/product-item2.png'} alt="Men Fashion" />
                                                         </div>
                                                         <div className='like-fav-wapper'>
                                                             <div className='like-wapper'>
@@ -519,7 +524,7 @@ const ProductPage = () => {
                                                         </div>
                                                         <div className='title-info-wapper'>
                                                             <div className='category'>
-                                                                <span>Tee Ball Coach</span>
+                                                                <span onClick={handleShow} >Tee Ball Coach</span>
                                                             </div>
                                                             <div className='title'>
                                                                 <span>The ultimate guide to teaching young player ...</span>
@@ -538,7 +543,82 @@ const ProductPage = () => {
                     </Container>  
                 </div>
             </div>
-        </div>
+        </div>       
+
+        <Modal
+            show={show}
+            onHide={handleClose}
+            backdrop="static"
+            keyboard={false}
+        >
+            <Modal.Header closeButton>
+            </Modal.Header>
+            <Modal.Body>
+                <div className='products-model'>
+                    <div className='products-image'>
+                        <Image src={process.env.PUBLIC_URL + '/images/product-item5.png'} alt="Men Fashion" />
+                    </div>
+                    <div className='like-fav-wapper'>
+                        <div className='like-wapper'>
+                            <Image className='normal-image' src={process.env.PUBLIC_URL + '/images/likeblack.png'} alt="Men Fashion" />
+                            <Image className='hover-image' src={process.env.PUBLIC_URL + '/images/likered.png'} alt="Men Fashion" />
+                            <div className='like-count'>24 Likes</div>
+                        </div>
+                        <div className='fav-wapper'>                                                                
+                            <Image className='normal-image' src={process.env.PUBLIC_URL + '/images/favblack.png'} alt="Men Fashion" />
+                            <Image className='hover-image' src={process.env.PUBLIC_URL + '/images/favblue.png'} alt="Men Fashion" />                                                                
+                        </div>
+                    </div>
+                    <div className='price-wapper'>
+                        <strong>$ 30.00</strong>
+                    </div>
+                    <div className='title-info-wapper'>
+                        <div className='category'>
+                            <span >Tee Ball Coach</span>
+                        </div>
+                        <div className='title'>
+                            <span>Introducing Tee Ball Coach: the ultimate guide to teaching young players the fundamentals of baseball, with step-by-step instructions and helpful tips to help build their skills and confidence on the field.</span>
+                        </div>
+                    </div>
+                    <div className='price-list-wapper'>
+                        <div className='price-list-items'>
+                            <div className='price-list-item'>
+                                <div className='price-tem-info'>
+                                    <h4>Zalora</h4>
+                                    <strong>$ 31.00</strong>
+                                </div>
+                                <div className='price-tem-buttom'>
+                                    <Button variant="warning">Buy Now</Button>
+                                </div>
+                            </div>
+                            <div className='price-list-item'>
+                                <div className='price-tem-info'>
+                                    <h4>Planet Sports</h4>
+                                    <strong>$ 30.99</strong>
+                                </div>
+                                <div className='price-tem-buttom'>
+                                    <Button variant="warning">Buy Now</Button>
+                                </div>
+                            </div>
+                            <div className='price-list-item'>
+                                <div className='price-tem-info'>
+                                    <h4>Planet Sports</h4>
+                                    <strong>$ 30.90</strong>
+                                </div>
+                                <div className='price-tem-buttom'>
+                                    <Button variant="warning">Buy Now</Button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </Modal.Body>
+            
+            {/* <Button variant="secondary" onClick={handleClose}>
+                Close
+            </Button> */}        
+            
+        </Modal>
         </>
     )
 }
